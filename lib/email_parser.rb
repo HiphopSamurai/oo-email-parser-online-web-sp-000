@@ -8,12 +8,12 @@ class EmailAddressParser
 
 
   def initialize(email_string)
-    #@emails = []
+    @emails = []
     @emails << email_string.split(/[\s,]+/).uniq
     #return @@emails
   end
 
   def parse
-    return @emails
+    puts @emails
   end
 end
